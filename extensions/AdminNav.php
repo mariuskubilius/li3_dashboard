@@ -5,7 +5,6 @@ class AdminNav extends \lithium\core\Object {
 	
 	protected $_classes = array(
 		'libraries' => 'lithium\core\Libraries',
-		'model' => 'dashboard\model\adminNav',
 		'cache' => 'lithium\storage\Cache',
 	);
 	
