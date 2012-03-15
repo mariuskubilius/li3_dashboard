@@ -1,5 +1,5 @@
 <?php
-namespace dashboard\extensions;
+namespace li3_dashboard\extensions;
 
 class AdminNav extends \lithium\core\Object {
 	
@@ -11,7 +11,10 @@ class AdminNav extends \lithium\core\Object {
 	
 	protected $_navigationFile = 'config/navigation.json';
 	
-	
+	/**
+	 * Retrieve admin navigation either from cache or from navigation.
+	 * @return Array an array containing whole navigation
+	 */
 	public function get(){
 		$cache = $this->_classes['cache'];
 		$key = md5('dashboard').'.admin.nav';
@@ -21,7 +24,7 @@ class AdminNav extends \lithium\core\Object {
 		}
 		
 		$nav = $this->_getItems();
-		$nav = $cache::write('default', $key, $nav, '+15 minutes');
+		$cache::write('default', $key, $nav, '+15 minutes');
 		return $nav;
 	}
 	/**

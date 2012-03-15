@@ -1,8 +1,8 @@
 <?php
-namespace dashboard\controllers;
+namespace li3_dashboard\controllers;
 
-use dashboard\models\Dashboard;
-use dashboard\extensions\AdminNav;
+use li3_dashboard\models\Dashboard;
+use li3_dashboard\extensions\AdminNav;
 
 class DashboardController extends \app\extensions\action\Controller {
 	
