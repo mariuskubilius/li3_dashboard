@@ -1,0 +1,23 @@
+{
+	"utilities":{
+		"title":"Utilities", 
+		"link":false, 
+		"weight": 1,
+		"children":{
+			"rebuildnav":{
+				"title": "Rebuild Navigation", 
+				"parent":"utilities", 
+				"params":{"controller":"Dashboard"}
+			}
+		}
+	},
+	"content":{
+		"children": {
+			"taxonomies":{
+				"title":"Taxonomies", 
+				"weight":0, 
+				"params":{"controller":"Taxonomies"}
+			}
+		}
+	}
+}
