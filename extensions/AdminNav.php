@@ -73,15 +73,3 @@ class AdminNav extends \lithium\core\Object {
 	}
 }
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
